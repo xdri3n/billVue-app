@@ -40,3 +40,6 @@ Ce projet est développé par Adrien THAISSEN.
 2. Exécuter la commande `node app.js` pour démarrer l'application le serveur.
 3. L'application est maintenant prête à être utilisée avec l'application Vue.js.
 - nb: Ne pas oublier de créer un fichier `.env` dans le dossier `bill-backend-app` avec les informations de connexion à votre base de données.
+
+# Contribuer
+Mon bébé de 6 mois 😉😅
