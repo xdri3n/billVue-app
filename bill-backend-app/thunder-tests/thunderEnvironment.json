@@ -13,11 +13,15 @@
       },
       {
         "name": "bill_id",
-        "value": "643a886a12da68489070e80b"
+        "value": "643c0e267304e92e39f881ac"
       },
       {
         "name": "customer_id",
-        "value": "643a880f12da68489070e7f9"
+        "value": "643c0e607304e92e39f881b8"
+      },
+      {
+        "name": "nbr",
+        "value": "3"
       }
     ]
   }

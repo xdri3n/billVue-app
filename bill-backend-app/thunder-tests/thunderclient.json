@@ -22,12 +22,12 @@
     "method": "POST",
     "sortNum": 12500,
     "created": "2023-04-06T11:58:46.810Z",
-    "modified": "2023-04-15T07:49:03.203Z",
+    "modified": "2023-04-16T15:02:43.699Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"billnum\": 123,\n  \"date\": \"02/03/2023\",\n  \"description\": \"Facture de test\",\n  \"client\": {\n    \"idclient\": 1,\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\"\n  },\n  \"prestations\": [{\n    \"description\": \"Test description\",\n    \"qty\": 2,\n    \"price\": 450\n  },\n  {\n    \"description\": \"TOTO\",\n    \"qty\": 2,\n    \"price\": 950\n  }],\n  \"discount\": 0,\n  \"paid\": 0,\n  \"totalHT\": 2800,\n  \"tva\": 20,\n  \"totalTTC\": 3360\n}",
+      "raw": "{\n  \"billnum\": 123,\n  \"date\": \"02/03/2023\",\n  \"description\": \"Facture de test\",\n  \"client\": {\n    \"idclient\": 1,\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\"\n  },\n  \"prestations\": [{\n    \"description\": \"Test description\",\n    \"qty\": 2,\n    \"price\": 450\n  },\n  {\n    \"description\": \"Test prestation 2\",\n    \"qty\": 2,\n    \"price\": 950\n  }],\n  \"discount\": 0,\n  \"paid\": 0,\n  \"totalHT\": 2800,\n  \"tva\": 20,\n  \"totalTTC\": 3360\n}",
       "form": []
     },
     "tests": [
@@ -48,7 +48,7 @@
     "method": "PATCH",
     "sortNum": 30000,
     "created": "2023-04-06T12:04:13.206Z",
-    "modified": "2023-04-06T13:34:04.126Z",
+    "modified": "2023-04-16T09:09:41.864Z",
     "headers": [],
     "params": [
       {
@@ -59,7 +59,7 @@
     ],
     "body": {
       "type": "json",
-      "raw": "{\n  \"billnum\": 3849348034893489,\n  \"date\": \"10/03/2023\"\n}",
+      "raw": "{\n  \"billnum\": 3456789098765,\n  \"date\": \"01/01/1900\"\n}",
       "form": []
     },
     "tests": []
@@ -133,12 +133,12 @@
     "method": "POST",
     "sortNum": 45000,
     "created": "2023-04-07T15:11:13.131Z",
-    "modified": "2023-04-15T09:47:17.569Z",
+    "modified": "2023-04-16T15:03:51.481Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"firstName\": \"Coco\",\n  \"lastName\": \"Django\",\n  \"dateAdded\": \"15/04/2023\",\n  \"role\": \"Comptable\",\n  \"phone\": \"0606060606\",\n  \"email\": \"cocdjango@gmail.com\",\n  \"company\": \"Caliente\",\n  \"adresse1\": \"\",\n  \"adresse2\": \"\",\n  \"zipCode\": \"57160\",\n  \"city\": \"SCY\",\n  \"country\": \"France\"\n}",
+      "raw": " {\n    \"firstName\": \"Coco\",\n    \"lastName\": \"Django\",\n    \"dateAdded\": \"15/04/2023\",\n    \"role\": \"Comptable\",\n    \"phone\": \"0606060606\",\n    \"email\": \"cocdjango@gmail.com\",\n    \"company\": \"Hot Sauce\",\n    \"adresse1\": \"1 Rue de la paix\",\n    \"adresse2\": \"\",\n    \"zipCode\": \"75000\",\n    \"city\": \"PARIS\",\n    \"country\": \"France\",\n    \"__v\": 0\n}",
       "form": []
     },
     "tests": [
@@ -194,5 +194,80 @@
       }
     ],
     "tests": []
+  },
+  {
+    "_id": "dfdc8e9c-6157-4c44-933f-baa4a5af1e01",
+    "colId": "e3d8973a-4359-4d73-88a5-4ae8c3438017",
+    "containerId": "",
+    "name": "customers",
+    "url": "{{url}}/customers",
+    "method": "GET",
+    "sortNum": 42500,
+    "created": "2023-04-16T09:10:51.108Z",
+    "modified": "2023-04-16T12:40:54.380Z",
+    "headers": [],
+    "params": [],
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json._id",
+        "action": "setto",
+        "value": "{{customer_id}}"
+      }
+    ]
+  },
+  {
+    "_id": "86840644-a0c9-4db1-8be1-b0978034aac1",
+    "colId": "e3d8973a-4359-4d73-88a5-4ae8c3438017",
+    "containerId": "",
+    "name": "Last Customers",
+    "url": "{{url}}/customers/lastcustomers/{nbr}",
+    "method": "GET",
+    "sortNum": 43750,
+    "created": "2023-04-16T09:15:42.741Z",
+    "modified": "2023-04-16T12:39:54.002Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "nbr",
+        "value": "{{nbr}}",
+        "isPath": true
+      }
+    ],
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json._id",
+        "action": "setto",
+        "value": "{{customer_id}}"
+      }
+    ]
+  },
+  {
+    "_id": "790bed37-0601-41d7-8eac-1536e746d0bb",
+    "colId": "e3d8973a-4359-4d73-88a5-4ae8c3438017",
+    "containerId": "",
+    "name": "Last Bills",
+    "url": "{{url}}/bills/lastbills/{nbr}",
+    "method": "GET",
+    "sortNum": 13750,
+    "created": "2023-04-16T14:54:57.598Z",
+    "modified": "2023-04-16T14:55:27.224Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "nbr",
+        "value": "{{nbr}}",
+        "isPath": true
+      }
+    ],
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json._id",
+        "action": "setto",
+        "value": "{{customer_id}}"
+      }
+    ]
   }
 ]

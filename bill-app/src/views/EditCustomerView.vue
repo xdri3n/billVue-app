@@ -103,7 +103,7 @@
                         <div class="mb-3 row">
                             <label for="address-ad1" class="col-sm-2 col-form-label">Adresse 1</label>
                             <div class="col-sm-10">
-                                <input v-model="customer.address1" class="form-control" id="address-ad1" />
+                                <input v-model="customer.adresse1" class="form-control" id="address-ad1" />
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                         <div class="mb-3 row">
                             <label for="address-ad2" class="col-sm-2 col-form-label">Adresse 2</label>
                             <div class="col-sm-10">
-                                <input v-model="customer.address2" class="form-control" id="address-ad2" />
+                                <input v-model="customer.adresse2" class="form-control" id="address-ad2" />
                             </div>
                         </div>
                     </div>
