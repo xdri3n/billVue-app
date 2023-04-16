@@ -11,9 +11,9 @@ Ce projet est développé par Adrien THAISSEN.
 
 2. Ouvrir un terminal dans le dossier du projet.
 
-3. Se déplacer dans le dossier
+3. Se déplacer dans le dossier du projet
    ````
-    cd bill-app
+    cd billVue-app
     ````
 4. Exécuter la commande `npm install` pour installer toutes les dépendances nécessaires.
 
