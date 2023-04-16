@@ -11,13 +11,19 @@ Ce projet est développé par Adrien THAISSEN.
 
 2. Ouvrir un terminal dans le dossier du projet.
 
-3. Se déplacer dans le dossier du projet
+3. Se déplacer dans le dossier
    ````
     cd billVue-app
     ````
-4. Exécuter la commande `npm install` pour installer toutes les dépendances nécessaires.
 
-5. Répéter l'opération pour le dossier `bill-backend-app`.
+4. Se déplacer dans le dossier `bill-app`
+   ````
+    cd bill-app
+    ````
+
+5. Exécuter la commande `npm install` pour installer toutes les dépendances nécessaires.
+
+6. Répéter l'opération pour le dossier `bill-backend-app`.
 
 ## Utilisation
 
