@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "978d0dea-d0ca-4ed2-898d-56f8c3ef1bfc",
+    "name": "bill-backend-api-env",
+    "default": true,
+    "sortNum": 5000,
+    "created": "2023-04-06T12:01:14.841Z",
+    "modified": "2023-04-06T12:01:14.841Z",
+    "data": [
+      {
+        "name": "url",
+        "value": "http://127.0.0.1:3000"
+      },
+      {
+        "name": "bill_id",
+        "value": "643a886a12da68489070e80b"
+      },
+      {
+        "name": "customer_id",
+        "value": "643a880f12da68489070e7f9"
+      }
+    ]
+  }
+]
