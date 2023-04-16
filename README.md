@@ -42,4 +42,4 @@ Ce projet est développé par Adrien THAISSEN.
 - nb: Ne pas oublier de créer un fichier `.env` dans le dossier `bill-backend-app` avec les informations de connexion à votre base de données.
 
 # Contribuer
-Mon bébé de 6 mois 😉😅
+Merci à mon fils de 6 mois 😘
