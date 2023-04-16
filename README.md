@@ -1,4 +1,4 @@
-# bill-app
+# billVue-app
 
 Ce projet est développé par Adrien THAISSEN.
 
